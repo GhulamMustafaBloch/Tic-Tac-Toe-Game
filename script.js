@@ -27,10 +27,11 @@ boxes.forEach((box) => {
         console.log("box was clicked");
         if (turnO) {
             box.innerText = "O";
+            box.style.color = "green"
             turnO = false
         } else {
-            box.style.color = "green"
             box.innerText = "X";
+            box.style.color = "#b0413e"
             turnO = true
         }
         box.disabled = true;
